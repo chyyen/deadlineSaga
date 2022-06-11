@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/insurance.css">
+    </head>
+
+    <body>
+        <div id="container" style="height:760px">
+            <a href="./index.html"><< Back to home page</a>
+            <div>
+                <div class="leftpane" style="text-align:center;overflow:scroll;">
+                    <h2 style="padding-bottom:5px;border-bottom:1px solid black">Check Insurance</h2>
+                    <div id="toCheck"></div>
+
+                </div>
+
+                <hr width="1" size="620" style="margin:0;float: left;">
+                
+                <div class="rightpane" style="text-align:center;overflow:scroll;">
+                    <h2 style="padding-bottom:5px;border-bottom:1px solid black">Validate Insurance</h3>
+                    <div id="toValidate"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+        <script src="./js/abis.js"></script>
+        <script src="./js/object.js"></script>
+        <script src="./js/utils/connect.js"></script>
+        <script src="./js/insurance/payInsurance.js"></script>
+        <script src="./js/insurance/triggerInsurance.js"></script>
+        <script src="./js/utils/handleLogin.js"></script>
+        <script src="./js/insurance/loader.js"></script>
+        <script src="./js/insurance/insurance.js"></script>
+    </body>
+
+</html>

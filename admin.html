@@ -1,0 +1,67 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <div id="container" style="height:760px">
+            <a href="./index.html"><< Back to home page</a>
+            <h1 style="text-align:center;margin-top:13vh">Only <a href="https://kovan.etherscan.io/address/0xa93ad2904e043a708f9c437b605b610ee85fa00b">0x9743612FF7767079F2CB16ffE7D064f9495a7467</a> can enter</h1>
+            <div style="width:100%;margin-top:15vh;">
+                <table style="width:100%"><tr>
+                    <td align="center">
+                        <h3> Sell insurance </h3>
+                        <form>
+                            <p>
+                                Insured Target : <br>
+                                <select id="opt"></select>
+                            </p>
+                            <p>
+                                Beneficiary : <br>
+                                <input id="Beneficiary" type="text">
+                            </p>
+                            <p>
+                                Premiums : 
+                                <span id="premiumsAmount">0</span><br>
+                                <input id="Premiums" type="range" value="0" min="0" oninput="updateRangeValue('premiumsAmount', this.value)">
+                            </p>
+                            <p>
+                                Benefit : 
+                                <span id="benefitAmount">0</span><br>
+                                <input id="Benefit" type="range" value="0" min="0" oninput="updateRangeValue('benefitAmount', this.value)">
+                            </p>
+                        </form>
+                        <p>
+                            <button 
+                            onclick="buildInsurance(document.querySelector('#opt').value, document.querySelector('#Beneficiary').value, document.querySelector('#Premiums').value, document.querySelector('#Benefit').value)">
+                            Submit 
+                            </button>
+                        </p>
+                    </td>
+                    <td align="center">
+                        <h3> Command </h3>
+                        <form>
+                            <p>
+                                Content : <input id="cmd" type="text">
+                            </p>
+                            <span id="msg" style="color:red"></span>
+                        </form>
+                        <p>
+                            <button onclick="command(document.querySelector('#cmd').value)">Submit</button>
+                        </p>
+                    </td>
+                </tr></table>
+            </div>
+        </div>
+
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+        <script src="./js/abis.js"></script>
+        <script src="./js/object.js"></script>
+        <script src="./js/utils/connect.js"></script>
+        <script src="./js/utils/handleLogin.js"></script>
+        <script src="./js/admin/command.js"></script>
+        <script src="./js/admin/newInsurance.js"></script>
+        <script src="./js/admin/formTools.js"></script>
+        <script src="./js/admin/admin.js"></script>
+    </body>
+
+</html>

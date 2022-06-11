@@ -1,0 +1,14 @@
+- admin 
+    - setfire (v)
+    - build insurance
+- buy or sale
+    - buy
+    - turn on sale
+    - turn not for sale
+- insurance 
+    - check insurance
+    - validate insurance
+-index 
+    - show girds status
+    - show transaction messages
+    - show information on right top corner

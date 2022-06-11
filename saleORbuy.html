@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/saleorbuy.css">
+    </head>
+
+    <body>
+        <div id="container" style="height:760px">
+            <a href="./index.html"><< Back to home page</a>
+            <div>
+                <div class="leftpane" style="text-align:center;">
+                    <h2>Sale your estate</h2>
+                    <form>
+                        <p> 
+                            <select id="Estate"></select>
+                        </p>
+                        <p>
+                            Price : <input type="text" id="Price">
+                        </p>
+                    </form>
+                    <button onclick="SaleEstate(document.querySelector('#Estate').value, document.querySelector('#Price').value)">Sale</button>
+
+                    <div style="height:17vh"></div>
+
+                    <h2>Turn into not for sale</h2>
+                    <form>
+                        <p> 
+                            <select id="OnSaleEstate"></select>
+                        </p>
+                    </form>
+                    <button onclick="UnSaleEstate(document.querySelector('#OnSaleEstate').value)">Unsale</button>
+                </div>  
+
+                <hr width="1" size="620" style="margin:0;float: left;">
+                
+                <div class="rightpane" style="text-align:center;overflow:scroll;">
+                    <h2 style="padding-bottom:5px;border-bottom:1px solid black">On sale</h3>
+                    <div id="OnSale"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+        <script src="./js/abis.js"></script>
+        <script src="./js/object.js"></script>
+        <script src="./js/utils/connect.js"></script>
+        <script src="./js/utils/handleLogin.js"></script>
+        <script src="./js/saleorbuy/loader.js"></script>
+        <script src="./js/saleorbuy/saleEstate.js"></script>
+        <script src="./js/saleorbuy/buyEstate.js"></script>
+        <script src="./js/saleorbuy/saleORbuy.js"></script>
+    </body>
+
+</html>

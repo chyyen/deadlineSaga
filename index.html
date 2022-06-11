@@ -1,0 +1,93 @@
+<html lang="zh-TW">
+    <head>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+
+    <body>
+        <div id="container" class="container">
+            <div class="leftpane flex_container">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+
+            <hr width="1" size="760" style="margin:0;float: left;">
+            
+            <div class="rightpane">
+                <p>
+                    Account : <span id="Account"></span>
+                </p>
+                <p>
+                    Balance &#x1F4B6 : <span id="Balance"></span>
+                </p>
+
+                <hr style="margin-top: 5vh;">
+
+                <div id="tansactionMessages" style="height: 480px;overflow: scroll"></div>
+
+                <div style="margin-top: 20px;padding-bottom: 15px;">
+                    <hr>
+                    <div style="text-align:center">
+                        <p>
+                            <button id="insurance" style="font-size:16pt;" onclick="location.href='./insurance.html'">Insurance</button>
+                            &ensp;
+                            <button id="saleORbuy" style="font-size:16pt;" onclick="location.href='./saleORbuy.html'">sale/buy</button>
+                        </p>
+                        <button id="command" style="font-size:16pt;" onclick="location.href='./admin.html'">admin only</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+        <script src="./js/abis.js"></script>
+        <script src="./js/object.js"></script>
+        <script src="./js/utils/connect.js"></script>
+        <script src="./js/index/info.js"></script>
+        <script src="./js/utils/handleLogin.js"></script>
+        <script src="./js/index/transactionMessages.js"></script>
+        <script src="./js/index/index.js"></script>
+    </body>
+</html>
