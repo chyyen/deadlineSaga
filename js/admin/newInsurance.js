@@ -28,7 +28,7 @@ async function buildInsurance(target, beneficiary, premiums, benefit){
             tx = await insuranceContract_write.buildInsurance(
                 Insured,
                 beneficiary, 
-                "0x9743612FF7767079F2CB16ffE7D064f9495a7467", 
+                Insured, 
                 parseInt(target),
                 premiums,
                 benefit,
