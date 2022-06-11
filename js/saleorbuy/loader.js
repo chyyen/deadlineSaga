@@ -2,7 +2,7 @@ async function LoadOnSale(){
     EstList = document.querySelector('#OnSale')
     
     List = []
-    for(let i=0; i<3 ;i++){
+    for(let i=0; i<45 ;i++){
         await estateContract.querySaler(i)
             .then(async (res) => {
                 if(res.toLowerCase() != userWalletAccount.toLowerCase() && res.toLowerCase() != emptyAddress){
@@ -19,7 +19,7 @@ async function LoadOnSale(){
 async function LoadEstate(){
     est = document.querySelector('#Estate') 
     OSest = document.querySelector('#OnSaleEstate')
-    for(let i=0; i<3; i++){
+    for(let i=0; i<45; i++){
         console.log(typeof(i))
         id = i
         console.log(id)
