@@ -26,6 +26,7 @@ async function LoadTransactionMessage(){
     })
     insuranceContract.on("triggerInsurance", (insurer, guarantor, beneficiary, insuredTargetTokenId, sumInsured, triggerTime, sumInsuredPercentage) => {
         transactionMessages.innerHTML += `<p style="border-bottom:1px solid black">A insurance on estate ${tokenId} is triggered,<br>${beneficiary} get ${sumInsured}</p>`
+        LoadEstate(parseInt(insuredTargetTokenId.toString()))
     })
     erc20Contract.on("Transfer",async (from, to, amount) => {
         if(to.toLowerCase() == userWalletAccount.toLowerCase()){
